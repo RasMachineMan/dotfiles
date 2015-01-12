@@ -46,3 +46,6 @@
 
 [push]
 	default = simple
+[user]
+	email = tomaszras@live.com
+	name = Tomasz Ras

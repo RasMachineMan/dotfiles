@@ -13,3 +13,8 @@ alias bi='bundle install'
 # Open Sublime Text with a very short command!
 alias s='st .'
 
+# Navigation for apps
+alias goc='cd ~/code/bluesquare/collectivity'
+alias gowc='cd ~/code/worders/engines/worders_core'
+alias gow='cd ~/code/worders'
+

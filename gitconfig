@@ -15,6 +15,7 @@
   editor = subl -n -w
   pager = less -FRSX
   mergeoptions = --no-edit
+	excludesfile = /Users/tomaszras/.gitignore_global
 
 [alias]
   co = checkout
@@ -49,3 +50,13 @@
 [user]
 	email = tomaszras@live.com
 	name = Tomasz Ras
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

@@ -14,7 +14,7 @@ alias bi='bundle install'
 alias s='st .'
 
 # Navigation for apps
-alias goc='cd ~/code/bluesquare/collectivity'
-alias gowc='cd ~/code/worders/engines/worders_core'
-alias gow='cd ~/code/worders'
+
+alias gowc='cd ~/code/RasMachineMan/worders/engines/worders_core'
+alias gow='cd ~/code/RasMachineMan/worders'
 

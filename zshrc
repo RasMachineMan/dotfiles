@@ -15,8 +15,15 @@ plugins=(git sublime zsh-syntax-highlighting zsh-history-substring-search)
 source $ZSH/oh-my-zsh.sh
 export PATH='~/.rbenv/shims:/usr/local/bin:/usr/local/share:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/X11/bin:/usr/texbin:~/bin'
 
+
+# postgres bin
+
+export PATH=$PATH:/usr/local/Cellar/postgresql@9.4/9.4.11/bin
+
+export EDITOR='subl'
+
 # Disable zsh correction
-unsetopt correct_all
+# unsetopt correct_all
 
 # To use Homebrew's directories rather than ~/.rbenv
 export RBENV_ROOT=$HOME/.rbenv
@@ -27,9 +34,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Enhance history with substring search and purple highlighting
-bindkey '^[OA' history-substring-search-up
-bindkey '^[OB' history-substring-search-down
+# bindkey '^[OA' history-substring-search-up
+# bindkey '^[OB' history-substring-search-down
 
 # UTF-8 is our default encoding
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"

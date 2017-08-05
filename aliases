@@ -12,9 +12,12 @@ alias bi='bundle install'
 
 # Open Sublime Text with a very short command!
 alias s='st .'
+alias at='atom .'
 
 # Navigation for apps
 
 alias gowc='cd ~/code/RasMachineMan/worders/engines/worders_core'
 alias gow='cd ~/code/RasMachineMan/worders'
+
+alias gomnd='cd ~/code/RasMachineMan/webapp'
 

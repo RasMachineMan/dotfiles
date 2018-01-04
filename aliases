@@ -18,6 +18,5 @@ alias at='atom .'
 
 alias gowc='cd ~/code/RasMachineMan/worders/engines/worders_core'
 alias gow='cd ~/code/RasMachineMan/worders'
-
-alias gomnd='cd ~/code/RasMachineMan/webapp'
+alias gogz='~/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems'
 

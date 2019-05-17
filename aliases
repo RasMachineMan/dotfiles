@@ -1,4 +1,3 @@
-# Get External IP / local IPs
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
@@ -13,10 +12,5 @@ alias bi='bundle install'
 # Open Sublime Text with a very short command!
 alias s='st .'
 alias at='atom .'
-
-# Navigation for apps
-
-alias gowc='cd ~/code/RasMachineMan/worders/engines/worders_core'
-alias gow='cd ~/code/RasMachineMan/worders'
-alias gogz='~/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems'
-
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias finder="open ."

@@ -45,3 +45,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+export ERL_AFLAGS="-kernel shell_history enabled"

@@ -1,6 +1,7 @@
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+alias run_ngrok='ngrok http -region=eu -subdomain=130984 3000'
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
@@ -8,6 +9,7 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 # Rails bundler shorter
 alias be='bundle exec'
 alias bi='bundle install'
+alias drop_test='bundle exec rake db:drop db:create db:migrate RAILS_ENV=test'
 
 # Open Sublime Text with a very short command!
 alias s='st .'
@@ -18,5 +20,15 @@ alias finder="open ."
 
 alias log_prod='ssh root@46.101.5.116'
 alias log_stage='ssh root@165.227.230.30'
-alias prod_console='bundle exec cap production rails:console'
-alias stage_console='bundle exec cap staging rails:console'
+alias rails_prod_c='bundle exec cap production rails:console'
+alias rails_stage_c='bundle exec cap staging rails:console'
+
+# calizy
+# cdl => console/deploy/log
+
+alias s_cdl='ssh deploy@157.245.180.26'
+alias s_clrc='bundle exec cap staging rails:console'
+alias p_cdl='ssh deploy@167.71.49.77'
+alias p_clrc='bundle exec cap production rails:console'
+
+

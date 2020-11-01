@@ -46,3 +46,10 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Android and Expo set up for react native platform
+# https://docs.expo.io/versions/v35.0.0/workflow/android-studio-emulator/
+
+export ANDROID_SDK=/Users/tomaszras/Library/Android/sdk
+export PATH=/Users/tomaszras/Library/Android/sdk/platform-tools:$PATH
+

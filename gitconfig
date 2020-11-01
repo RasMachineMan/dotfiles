@@ -12,7 +12,7 @@
   remote = yellow
 
 [core]
-	editor = atom --wait
+	editor = code -w
   pager = less -FRSX
   mergeoptions = --no-edit
 	excludesfile = /Users/tomaszras/.gitignore_global
